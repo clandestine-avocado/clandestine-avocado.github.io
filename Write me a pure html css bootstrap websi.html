@@ -1,0 +1,19 @@
+
+
+
+<html>
+  <body>
+    <button onclick="downloadAccessDatabase()">Download Access Database</button>
+    
+    <script>
+      function downloadAccessDatabase() {
+        const link = document.createElement('a');
+        link.href = 'C:/Users/kroy2/Documents/contacts.accdb';
+        link.download = 'contacts.accdb';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+      }
+    </script>
+  </body>
+</html>
